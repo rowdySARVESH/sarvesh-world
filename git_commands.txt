@@ -1,0 +1,92 @@
+git --version
+Checks whether Git is installed.
+
+git config --global user.name "Sarvesh Wankhede"
+Sets the author name for commits.
+
+git config --global user.email "passissarvesh1@gmail.com"
+Sets the author email for commits.
+
+git init
+Initializes a local Git repository.
+
+git branch -M main
+Renames the current branch to main.
+
+git status
+Shows the status of the working tree and untracked files.
+
+git add index.html about.html
+Stages the initial HTML files.
+
+git commit -m "Create initial sarvesh world pages"
+Creates the first commit.
+
+git add index.html
+Stages the updated home page.
+
+git commit -m "Expand sarvesh world homepage"
+Creates the second commit.
+
+git branch feature
+Creates the feature branch.
+
+git switch feature
+Switches to the feature branch.
+
+git add about.html
+Stages the feature change.
+
+git commit -m "Add sarvesh's discovery details"
+Commits the feature change on the feature branch.
+
+git switch main
+Switches back to main.
+
+git merge --no-ff feature -m "Merge feature branch into main"
+Attempted to merge feature into main (resulted in local changes conflict).
+
+git add about.html
+Stages the conflicting file to resolve the merge error.
+
+git commit -m "Add sarvesh's discovery details"
+Commits the changes on main to allow the merge to proceed.
+
+git merge --no-ff feature -m "Merge feature branch into main"
+Merges the feature branch into main successfully.
+
+git log --oneline --graph --decorate --all
+Displays the commit graph showing the branches and merge.
+
+git check-ignore -v debug.log temp/sample.txt
+Verifies that the .gitignore rules are working.
+
+git add .gitignore
+Stages the ignore file.
+
+git commit -m "Add rules for ignored files"
+Commits the ignore rules.
+
+git add temporary.txt
+Stages the temporary demonstration file.
+
+git commit -m "Add temporary file for revert demonstration"
+Commits the temporary file.
+
+git revert --no-edit HEAD
+Reverses the latest commit with a new commit.
+
+git log --oneline -5
+Shows the recent commit history including the revert.
+
+git remote add origin https://github.com/rowdySARVESH/sarvesh-world.git
+Connects the local repository to your GitHub repository.
+
+git remote -v
+Verifies the remote URL.
+
+git push -u origin main
+Pushes the main branch to GitHub.
+
+git push -u origin feature
+Pushes the feature branch to GitHub.
